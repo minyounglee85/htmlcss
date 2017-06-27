@@ -1,0 +1,28 @@
+html{
+  height: 100%
+}
+
+body {
+  font-family: "Helvetica NEUE", sans-serif;
+  background-image: url(https://unsplash.it/200);
+  background-repeat: no-repeat;
+  color: tomato;
+  background-position: center center;
+  background-size: 250px;
+}
+
+a{
+  font-size: 50px;
+  color: inherit;
+}
+
+input{
+  color: inherit;
+  height: 50px;
+  width: 150px;
+  border: 1px solid currentColor;
+}
+
+div{
+  letter-spacing: 10px; 
+}

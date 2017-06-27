@@ -1,0 +1,77 @@
+body{
+  font-family: sans-serif;
+  background: #eeeeee;
+
+  max-width: 500px;
+  margin: 20px auto;}
+
+article{
+  padding: 20px 20px;
+  background: #ffffff;
+  border: #eeeeee;
+  margin: 20px auto;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.head{
+  
+}
+
+.head img{
+float: left;
+}
+
+/*
+overflow:hidden 
+float옆 인식
+*/
+
+.head .info {
+padding: 0px 10px;
+overflow: hidden;
+}
+
+.head .writer {
+color: darkblue;
+font-weight: bold;
+text-decoration: none;
+}
+
+.head .time {
+color: gray;
+text-decoration: none;
+font-size: 10px;
+}
+
+.text{
+padding: 10px 0px;
+float: left;
+}
+
+.media{
+max-width: 100%;
+}
+
+.media img{
+ width: 100%
+}
+
+.social{
+padding: 0px 0px;
+}
+
+.social button{
+  background: none;
+  border: none;
+}

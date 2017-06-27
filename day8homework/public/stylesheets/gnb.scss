@@ -1,0 +1,47 @@
+/* global navigation bar */
+.global-nav-bar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  padding: 0px 7px;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  background: #ffffff;
+  justify-content: space-between;
+  border-bottom: 1px solid #eeeeee;
+  z-index: 10000;
+
+  .logo-area{
+    display: flex;
+    padding: 0.5em;
+    margin: 0;
+    border: 0;
+  }
+
+  .search-area{
+    display: flex;
+    flex: 1;
+    padding: 0px 40px;
+    align-items: center;
+
+    .search-input-text{
+      flex: 1;
+      max-width: 590px;
+      height: 26px;
+      font: inherit;
+    }
+
+    .btn-area{
+      height: 30px;
+      widows: 60px;
+      background: darkblue;
+    }
+  }
+
+  .btn-area{
+    display: flex;
+    align-items: center;
+  }
+
+}

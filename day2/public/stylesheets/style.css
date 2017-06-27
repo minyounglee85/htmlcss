@@ -1,8 +1,127 @@
+/*
+body
+font
+*/
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: sans-serif;
+  background: #eeeeee;
 }
 
-a {
-  color: #00B7FF;
+/*
+article 포스트 카드 부분
+padding 사이 간격
+*/
+
+article {
+  /* 포스트 영역 500px */
+  /* 
+  max-width를 넣어야 짤리지 않는다. 특정 사이즈 이상 늘어나지 않는다.
+  max-width를 지정해야 margin을 넣어도 auto로 중앙정렬 된다.
+  margin: 여러 article간의 사이간격 20px + auto로 중앙정렬.
+  */
+  max-width: 500px;
+  padding: 20px 20px;
+  margin: 20px auto;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+}
+
+/*
+.class selector
+div 내부에서 특정 class 지정해서 스타일 가능.
+.class space .class 특정 요소만 지정.
+*/
+
+.author-area a{
+  text-decoration: none;
+
+}
+
+.author-area a:hover{
+  text-decoration: underline;
+
+}
+
+.author-area {
+  /* height를 넣어줌(썸네일 이미지 사이즈) */
+  height: 80px;
+}
+
+.author-area .thumb{
+  
+  /*왼쪽에 붙이기*/
+  float: left;
+
+  width: 80px;
+  height: 80px;
+  background: #eeeeee; /* 로딩전 이미지. 일종의 페이크*/
+}
+
+.author-area .thumb img{
+  width: 80px;
+  height: 80px;
+}
+
+.author-area .info{
+  /* 사이간격 패딩의 위아래 좌우
+  <위아래> <좌우>
+  <상하좌우>
+  */
+  padding: 10px 20px;
+
+  /*레이아웃*/
+  /*float의 오른쪽에 있는 친구에 넣는 거*/
+  overflow: hidden;
+}
+.author-area .name{
+/* 사이간격을 아래로만 */
+padding-bottom: 3px;
+
+}
+
+.author-area .name a{
+color: royalblue;
+text-decoration: none;
+}
+
+
+.author-area .desc{}
+
+.author-area .desc a{
+  color: gray;
+  text-decoration: none;
+}
+
+.text-area {}
+
+.media-area {
+  padding: 10px;
+}
+
+.media-area img{
+  /*
+  본문에 삽입한 이미지 빠지지 않게
+  부모요소의 가로사이즈를 기준으로 한다.
+  부모요소의 width: 320px
+  자식요소의 width: 100% = 320px
+  */
+  width: 100%;
+}
+
+.social-area {
+  /*
+  border
+  외관선 굵기
+  외곽선 타입
+  외곽선 컬러
+  */
+  border-top:1px solid #666666;
+}
+
+.social-area button{
+  /* 버튼 속성 제거 초기화 */
+  border: 0;
+  background: none;
+  padding: 0;
 }

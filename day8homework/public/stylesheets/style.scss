@@ -1,0 +1,39 @@
+/*
+
+********************************************
+*               gnb.scss                   *
+********************************************
+*               **                         *
+*               ** contents.scss           *
+* sidemenu.scss **                         *
+*               ****************************         
+*               ** footer.scss             *
+********************************************
+
+*/
+
+@import "reset.scss";
+@import "gnb.scss";
+@import "sidemenu.scss";
+@import "contents.scss";
+@import "button.scss";
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    font-size: 12px;
+    background: #eeeeee;
+    font-family: "Roboto", UILanguageFont, Arial, sans-serif;
+    text-rendering: optimizeLegibility;
+    padding-top: 61px;
+}
+
+/* global wrapper */
+.global-body-wrapper {
+     padding-left:201px;
+     background: darkred;
+ }
+
